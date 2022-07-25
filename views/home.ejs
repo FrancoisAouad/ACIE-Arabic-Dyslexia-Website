@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ar">
+        <meta http-equiv="Content-Type" charset="utf-8" />
+        <title>Dyslexia WebApp</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <%- include('../views/partials/navigation.ejs') %>
+        <div class="topbar">
+            <p class="toptext">المقاتع الصّوتيّة</p>
+        </div>
+
+        <div class="inputfield">
+            <input type="text" onfocus="this.value=''" value="" id="text" pattern="[\u0600-\u06FF]" />
+        </div>
+
+        <div class="submitbutton">
+            <button type="button" onclick="syllabllate()">اقطع</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="cright">©Chady Ayoub, Michael Haddad, Eddy Hanna, Francois Aouad</div>
+    </body>
+</html>
+<%- include('../views/partials/navigation.ejs') %>

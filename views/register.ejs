@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> <%= registerTitle%></title>
+   
+    
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  
+	
+</head>
+<body>
+		
+
+   
+        </button>
+      </div>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+            
+                <form class="register-form" id="register-form" method="POST">
+                 
+        <div class="form-title">
+            <div class="user-icon gr-bg">
+            <i class="fa fa-user"></i>
+            </div>
+     <h2> Join us now!</h2>
+            </div>
+
+            
+            <label for="text><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="name" class="cm-input" name="name"  placeholder="Full Name">
+
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" class="cm-input" name="email"  placeholder="Email">
+        
+            <label for="pass"><i class="fa fa-lock"></i> Password</label>
+            <input id="password" type="password" class="cm-input" name="password"  placeholder=" Password">
+
+            <label for="pass"><i class="fa fa-check"></i>Confirm Password</label>
+            <input id="confirmpassword" type="password" class="cm-input" name="confirmpassword"  placeholder="Confirm Password">
+           
+            <button type="submit" class="btn-login  gr-bg" name="register" value="Submit Form" >Sign Up</button>
+    </form>
+    <!-- <script>
+
+const form=document.getElementById('register-form');
+form.addEventListener('submit', registerUser);
+
+function registerUser(event){
+
+event.preventDefault();
+const name=document.getElementById('name');
+const email=document.getElementById('email');
+const password=document.getElementById('password');
+
+
+
+const result=fetch('/register',{method: 'POST', headers:{'Content-Type': 'application/json'},
+body: JSON.stringify({name,
+   email, 
+   password})
+
+}).then((res)=>res.json())
+
+
+console.log(result);
+
+if(result.status==='ok'){
+
+alert('Success');
+
+}else{
+
+  alert(result.error);
+}
+
+}
+
+    
+  </script> -->
+    		</div>
+		</div>
+    </div>
+</section>
+     
+
+
+
+	</body>
+</html>

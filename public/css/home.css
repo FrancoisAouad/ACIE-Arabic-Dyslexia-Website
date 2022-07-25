@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-size: 100%;
+}
+
+.topbar {
+    overflow: hidden;
+    background-color: rgb(202, 106, 106);
+    width: 100%;
+    top: 0px;
+}
+
+.toptext {
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.inputfield {
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+input[type='text'] {
+    width: 50%;
+    height: 50px;
+    font-size: 45px;
+    border-radius: 20px;
+    background-color: rgb(109, 125, 177);
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+        background-color 0.4s ease-in-out;
+}
+input[type='text']:focus {
+    width: 70%;
+    background-color: rgb(144, 153, 184);
+    border-radius: 0px;
+}
+
+.submitbutton {
+    text-align: center;
+    margin-top: 30px;
+}
+button {
+    font-size: 35px;
+
+    border-radius: 4000px;
+    background-color: rgb(211, 120, 120);
+    color: rgb(0, 0, 0);
+    width: 10%;
+    height: 45px;
+}
+
+.spanstyle {
+    font-size: 45px;
+}
+#result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cright {
+    position: fixed;
+    bottom: 5px;
+}

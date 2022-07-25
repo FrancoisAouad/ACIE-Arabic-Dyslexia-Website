@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title><%= loginTitle %></title>
+
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+                        <form class="login-form" action="/login" method="POST">
+                            <div class="form-title">
+                                <div class="user-icon gr-bg">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <h2>Sign In</h2>
+                            </div>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="email" id="email" class="cm-input" name="email" placeholder="Email" />
+
+                            <label for="pass"><i class="fa fa-lock"></i> Password</label>
+                            <input id="pass" type="password" class="cm-input" name="password" placeholder=" Password" />
+
+                            <button type="submit" class="btn-login gr-bg" name="login">Login</button>
+
+                            <a class="forgot-pass" href="/resetpassword">Forgot Password?</a>
+
+                            <p class="already-reg">
+                                Not Registered yet?
+                                <a href="/register" class="click-here">Click Here</a>
+                                to sign up.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

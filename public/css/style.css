@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../background.png') no-repeat;
+
+    background-size: 150%;
+    background-attachment: fixed;
+}
+.login-form {
+    max-width: 400px;
+    min-height: 400px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin: 60px auto 0 auto;
+    padding: 25px;
+    color: #414141;
+}
+.register-form {
+    max-width: 400px;
+    min-height: 400px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin: 60px auto 0 auto;
+    padding: 25px;
+    color: #414141;
+}
+.cm-input {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin: 14px auto;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+.cm-input:focus {
+    outline: 0;
+    border-color: rgba(209, 122, 142, 1);
+}
+.cm-input:invalid {
+    border-color: #e41b17;
+}
+
+/* Gradient Background */
+.gr-bg {
+    background: #73b9fa;
+    background: linear-gradient(
+        90deg,
+        rgb(128, 223, 252) 0%,
+        rgba(209, 122, 142, 1) 55%,
+        rgba(220, 159, 174, 1) 100%
+    );
+}
+
+/* Login Button Design */
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-login:focus {
+    outline: 0;
+}
+
+.btn-login:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.form-title {
+    padding: 12px;
+    text-align: center;
+    position: relative;
+}
+.form-title h2 {
+    color: #5c86e1;
+}
+.form-title .user-icon {
+    position: absolute;
+
+    font-size: 42px;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 45px;
+    top: -60px;
+    left: -45px;
+}
+.forgot-pass {
+    display: block;
+
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.already-reg {
+    display: block;
+    padding: 10px;
+    border: 0;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.alert {
+    color: blue;
+}
